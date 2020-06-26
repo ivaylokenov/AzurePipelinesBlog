@@ -29,6 +29,6 @@
             => MyController<HomeController>
                 .Calling(c => c.Privacy())
                 .ShouldReturn()
-                .View();
+                .BadRequest();
     }
 }
